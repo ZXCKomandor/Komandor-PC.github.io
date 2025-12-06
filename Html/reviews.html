@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Отзывы | KOMANDOR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reviews.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">KOMANDOR</div>
+        <nav>
+          <a href="glav.html">Главная</a>
+      <a href="products.html">Товары</a>
+      <a href="reviews.html"  class="active">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="library.html">Библиотека игр</a>
+        </nav>
+        <div class="phone">+79000000000</div>
+      </header>
+  <main>
+    <div class="reviews-container" id="reviews"></div>
+  
+    <button id="showFormBtn">Написать отзыв</button>
+  
+    <form id="reviewForm" class="hidden">
+      <h2>Оставить отзыв</h2>
+      <input type="text" id="name" placeholder="Ваше имя" required/>
+      <input type="text" id="avatar" placeholder="URL аватара (картинка)" required/>
+      <input type="number" id="rating" placeholder="Оценка (1-5)" min="1" max="5" required/>
+      <textarea id="text" placeholder="Ваш отзыв" required></textarea>
+      <button type="submit">Добавить отзыв</button>
+    </form>
+  </main>
+
+  <script src="../script/reviews.js"></script>
+</body>
+<footer>
+  <div class="footer-logo">KOMANDOR</div>
+  <div class="footer-contact">
+    <p>г. Краснодар, ул. Онежская, 1</p>
+    <p>+7 (900) 000-00-00</p>
+    <p>info@komandor.club</p>
+  </div>
+</footer>
+</html>
